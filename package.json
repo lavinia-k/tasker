@@ -1,0 +1,32 @@
+{
+  "name": "tasker",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@airtasker/react-backbone-connect": "0.0.6",
+    "backbone": "^1.3.3",
+    "lodash": "^4.17.11",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-scripts": "2.1.3",
+    "react-string-replace": "^0.4.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start --scripts-version react-scripts",
+    "build": "react-app-rewired build --scripts-version react-scripts",
+    "test": "react-app-rewired test --env=jsdom --scripts-version react-scripts",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "react-app-rewired": "^2.0.3"
+  }
+}
