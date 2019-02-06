@@ -6,7 +6,7 @@ function ActivityFeedView({ activityFeedLines }) {
 }
 
 ActivityFeedView.propTypes = {
-  activityFeedLines: PropTypes.shape([PropTypes.element]).isRequired,
+  activityFeedLines: PropTypes.arrayOf(PropTypes.node).isRequired,
 };
 
 export default ActivityFeedView;
