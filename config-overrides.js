@@ -1,11 +1,11 @@
-var path = require('path');
+module.exports = function override(config) {
+  const modifiedConfig = config;
+  if (!config.resolve.extensions) {
+    modifiedConfig.resolve.extensions = ['', '.js'];
+  }
 
-module.exports = function override(config, env) {
-    if (!config.resolve.extensions) {
-        config.resolve.extensions = ['', '.js'];
-    }
+  modifiedConfig.entry = './src/index.jsx';
+  modifiedConfig.resolve.extensions.push('.jsx');
 
-    config.resolve.extensions.push('.jsx');
-
-    return config;
-}
+  return modifiedConfig;
+};

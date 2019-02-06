@@ -3,12 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@airtasker/react-backbone-connect": "0.0.6",
-    "backbone": "^1.3.3",
+    "axios": "^0.18.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "geolib": "^2.0.24",
     "lodash": "^4.17.11",
+    "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.3",
+    "react-spinners": "^0.5.1",
     "react-string-replace": "^0.4.1"
   },
   "scripts": {
@@ -27,6 +33,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "prettier-eslint": "^8.8.2",
     "react-app-rewired": "^2.0.3"
   }
 }

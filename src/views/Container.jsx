@@ -1,12 +1,12 @@
 import React from 'react';
-import { ActivityFeedPage } from './ActivityFeedPage';
+import ActivityFeedContainer from '../components/ActivityFeedContainer';
 
-export class Container extends React.Component {
-    render() {
-        return (
-            <div className="app-container">
-                <ActivityFeedPage />
-            </div>
-          );
-    }
+function Container() {
+  return (
+    <div className="app-container">
+      <ActivityFeedContainer />
+    </div>
+  );
 }
+
+export default Container;
