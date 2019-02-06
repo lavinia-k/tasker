@@ -11,8 +11,8 @@ import {
 } from '../utils/GeoUtils';
 
 const activityFeedJsonFilePath = '../activity_feed.json';
-const activityFeedDataPollingIntervalInMs = 2000;
-const useGeolocationFiltering = true;
+const activityFeedDataPollingIntervalInMs = 10000;
+const useGeolocationFiltering = true; // Set to false if you don't need location-based filtering
 const userCoordinatesFromLocalStorage = localStorage.getItem('userCoords');
 
 // When using geolocation filtering, don't wait for the location API to return past this time limit.
@@ -41,7 +41,7 @@ class ActivityFeedContainer extends React.Component {
   }
 
   componentDidMount() {
-    // Get activity feed data and poll for data every 10 seconds
+    // Get activity feed data and poll for data every X seconds
     this.getActivityFeedData();
     this.interval = setInterval(
       () => this.getActivityFeedData(),

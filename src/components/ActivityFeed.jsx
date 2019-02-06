@@ -6,7 +6,7 @@ import { hasValidCoordinates, getDistanceBetweenTwoCoordinates } from '../utils/
 import LargePlainTextView from '../views/LargePlainTextView';
 
 const initialUrlPreviewText = 'Mouse over a user or task to get their path.';
-const activityFilteringDistanceInMeters = 20000; // Modify this to test location filtering
+const activityFilteringDistanceInMeters = 300000; // Modify this to test location filtering
 
 class ActivityFeed extends React.Component {
   constructor(props) {
